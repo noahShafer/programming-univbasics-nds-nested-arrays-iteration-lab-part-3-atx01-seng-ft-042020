@@ -4,6 +4,6 @@ def join_nested_strings(src)
   array = []
   final = ""
   src.each {|arr| array.concat(arr)}
-  array.each {|val| final += val.to_s}
+  array.each {|val| final += val }
   final
 end
