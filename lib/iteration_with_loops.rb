@@ -4,6 +4,6 @@ def join_nested_strings(src)
   array = []
   final = ""
   src.each {|arr| array.concat(arr)}
-  array.each {|val| final += val if val.instance_of? String }
+  array.each {|val| final += " #{val}" if val.instance_of? String }
   final
 end
